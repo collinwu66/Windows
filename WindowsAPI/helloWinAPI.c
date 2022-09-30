@@ -23,6 +23,11 @@
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 					PSTR szCmdLine, int iCmdShow)
 {
+	//调用MessageBox来实现弹出提示框的功能
+	//第一个参数可以为NULL，表示当前窗体的句柄
+	//第二个参数需要提示框显示的内容
+	//提示框的标题名
+	//提示框的风格，MB_OK表示只有一个确定按钮
 	MessageBox(NULL, TEXT("helloWinAPI!"), TEXT("FirstWinAPIAPP"), MB_OK);
 	return 0;
 }
